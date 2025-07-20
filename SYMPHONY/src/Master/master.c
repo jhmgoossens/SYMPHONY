@@ -858,6 +858,7 @@ int sym_solve(sym_environment *env)
       }
    }
 #ifdef _OPENMP
+   printf("Hello World OpenMP in symphony..\n");
    if (!env->par.tm_par.rs_mode_enabled){
       omp_set_dynamic(FALSE);
       omp_set_num_threads(env->par.tm_par.max_active_nodes);
